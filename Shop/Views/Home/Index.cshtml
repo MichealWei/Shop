@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Product>
+
+<a class="btn btn-primary" asp-action="CreateUser">Sign Up</a>
+<a class="btn btn-primary" asp-action="Login">Sign In</a>
+
+@foreach (var p in Model)
+{
+    <div>
+        <h3>Description: @p.Description</h3>
+        Quantity: @p.ProductQuantity
+        <h4>Price: @p.Price</h4>
+    </div>
+}
